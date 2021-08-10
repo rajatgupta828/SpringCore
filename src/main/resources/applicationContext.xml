@@ -6,6 +6,9 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!--  Load the Properties File -->
+    <context:property-placeholder location="classpath:sport.properties" />
 
     <!-- Define your beans here -->
     
@@ -27,8 +30,13 @@
     <bean id = "myCricketCoach" class = "com.rajat.learning.inversionControl.CricketCoach">
     	<!-- Set Up Setter Injection -->
     	<property name  = "fortuneServices" ref="happyService"></property>
+    	
+    	<!--
     	<property name="emailId" value="rajatgupta828@gmail.com"></property>
-    	<property name="teamName" value="Rajat Sunrisers"></property>
+    	<property name="teamName" value="Rajat Sunrisers"></property>  -->
+    	
+    	<property name="emailId" value="${foo.email}" />
+    	<property name="teamName" value="${foo.team}" />
     </bean>
     
     
