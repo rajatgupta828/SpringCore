@@ -25,7 +25,13 @@ public class SpringInversionControl {
 		// Call the method on the bean
 		System.out.println(footballCoach.getDailyWorkouts());
 		System.out.println(footballCoach.getDailyFortune());
-
+		
+		// Using the setter Injections
+		Coach cricketCoach = context.getBean("myCricketCoach", Coach.class);
+		System.out.println(cricketCoach.getDailyWorkouts());
+		System.out.println(cricketCoach.getDailyFortune());
+		
+		
 		// Close the context
 		context.close();
 

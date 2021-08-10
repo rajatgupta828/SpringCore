@@ -24,6 +24,13 @@
     	<constructor-arg ref="happyService"></constructor-arg>
     </bean>
     
+    <bean id = "myCricketCoach" class = "com.rajat.learning.inversionControl.CricketCoach">
+    	<!-- Set Up Setter Injection -->
+    	<property name  = "fortuneServices" ref="happyService"></property>
+    	<property name="emailId" value="rajatgupta828@gmail.com"></property>
+    	<property name="teamName" value="Rajat Sunrisers"></property>
+    </bean>
+    
     
     <!-- 
 	Add a logger config to see logging messages.		
