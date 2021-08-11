@@ -20,5 +20,14 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneServices.getFortune();
 	}
-
+	
+	// Custom Init Method
+	public void doMyStart() {
+		System.out.println(" Calling Custom Start Method...");
+	}
+	
+	// Custom Destroy Method
+	public void doMyDestroy() {
+		System.out.println(" Calling Custom destroy Method...");
+	}
 }

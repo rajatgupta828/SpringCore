@@ -1,4 +1,4 @@
-package com.rajat.learning.beanscopes;
+package com.rajat.learning.mainClasses;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
